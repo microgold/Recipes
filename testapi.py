@@ -4,7 +4,7 @@ import openai
 import readchar 
 import streamlit as st
 
-mykey = st["API_KEY"]
+mykey = st.secrets["API_KEY"]
 openai.api_key = mykey
 
 keepGoing = True
